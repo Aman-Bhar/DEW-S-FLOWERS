@@ -1,6 +1,13 @@
 <html>
 <title>DEW'S flowers</title> 
-<script src="script.js"></script>
+<script>
+    onload = () => {
+    const c = setTimeout(() => {
+      document.body.classList.remove("not-loaded");
+      clearTimeout(c);
+    }, 1000);
+  };
+</script>
 <body class="not-loaded">
     <div class="night"></div>
     <div class="flowers">
